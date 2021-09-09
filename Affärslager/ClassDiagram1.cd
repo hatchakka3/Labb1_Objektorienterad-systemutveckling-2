@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Affärslager.Bok">
+    <Position X="29.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAQAAAAAEAAAAAAAAAAAAAQAAAIAAAAAQAEA=</HashCode>
+      <FileName>Entiteter\Bok.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Status" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Affärslager.Bokning">
+    <Position X="6.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAEAAAAAAAAACIAAAIAAAAEAAAAgAA=</HashCode>
+      <FileName>Entiteter\Bokning.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Expedit" />
+      <Property Name="Medlem" />
+      <Property Name="Bok" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Affärslager.Expedit">
+    <Position X="26" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAECCAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entiteter\Expedit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Affärslager.Faktura">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAIAAAAAAAAAAAAACAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Entiteter\Faktura.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Bokning" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Affärslager.Medlem">
+    <Position X="3.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAIAAAAAAkAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entiteter\Medlem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Affärslager.BokningRepository">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAgAQABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\BokningRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="bokningar" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Affärslager.BokRepository">
+    <Position X="17.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAQAggAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Repositories\BokRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="böcker" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Affärslager.ExpeditRepository">
+    <Position X="26.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAABCAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\ExpeditRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Expediter" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Affärslager.FakturaRepository">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Repositories\FakturaRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="fakturor" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Affärslager.MedlemRepository">
+    <Position X="3.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAgAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Repositories\MedlemRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="medlemmar" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Affärslager.Bibliotek">
+    <Position X="24.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACARACAAIAAAAAAAAgAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bibliotek.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Kontext" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Affärslager.Kontext">
+    <Position X="12.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAABAAAQAAAAAAAAAAIAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Kontext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BokningRepository" />
+      <Property Name="BokRepository" />
+      <Property Name="ExpeditRepository" />
+      <Property Name="FakturaRepository" />
+      <Property Name="MedlemRepository" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="Affärslager.Status">
+    <Position X="37.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAACAEAA=</HashCode>
+      <FileName>Enum\Status.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
